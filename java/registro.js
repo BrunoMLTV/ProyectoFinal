@@ -50,5 +50,5 @@ document.getElementById("registroForm").addEventListener("submit", function (e) 
 
   // Redireccionar o limpiar formulario
   this.reset();
-  window.location.href = "index.html";
+  window.location.href = "/ProyectoFinal/index.html";
 });
