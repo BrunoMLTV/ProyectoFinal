@@ -19,7 +19,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
   if (usuarioValido) {
     alert("¡Inicio de sesión exitoso!");
     localStorage.setItem("usuarioActual", JSON.stringify(usuarioValido));
-    window.location.href = "inicio.html";
+    window.location.href = "/ProyectoFinal/index.html";
   } else {
     alert("Usuario o contraseña incorrectos. Inténtalo de nuevo.");
   }
