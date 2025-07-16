@@ -50,5 +50,5 @@ document.getElementById("registroForm").addEventListener("submit", function (e) 
 
   // Redireccionar o limpiar formulario
   this.reset();
-  window.location.href = "Iniciar seccion.html";
+  window.location.href = "INICIAR SECCION.html";
 });
