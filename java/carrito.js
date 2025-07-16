@@ -192,6 +192,7 @@ function actualizarContadorCarrito() {
     document.getElementById('modalExito').style.display = 'flex';
 
     setTimeout(() => {
+        localStorage.removeItem("carrito");
       window.location.href = "/ProyectoFinal/index.html"; // Cambia si tu archivo se llama distinto
     }, 3000);
   });
