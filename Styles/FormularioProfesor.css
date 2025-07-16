@@ -1,0 +1,114 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 2 jul. 2025, 12:48:15 p. m.
+    Author     : Asus
+*/
+body {
+  background: linear-gradient(135deg, #1e1f26, #28313b); /* fondo general */
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff; /* color del texto */
+}
+
+/* Fondo detrás del formulario */
+.form-background {
+  background: linear-gradient(to right, #141e30, #243b55);
+  padding: 80px 20px;
+}
+
+/* Estilo pro del formulario */
+.form-container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  max-width: 480px;
+  width: 100%;
+  margin: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+/* Título llamativo */
+.form-container h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.form-container h2::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 60px;
+  background-color: #00c3ff;
+  margin: 12px auto 0;
+  border-radius: 3px;
+}
+
+/* Inputs modernos */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #ccc;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #00c3ff;
+  box-shadow: 0 0 8px #00c3ff80;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Botón épico */
+button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #00c3ff, #0072ff);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 198, 255, 0.3);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 198, 255, 0.5);
+}

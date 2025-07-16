@@ -1,0 +1,155 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 2 jul. 2025, 12:04:40 p. m.
+    Author     : Asus
+*/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.profesores {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee, #f6d365, #fda085);
+    text-align: center;
+    color: #333;
+}
+
+.profesores h2 {
+    font-size: 42px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.profesores h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #00d2ff;
+    border-radius: 4px;
+}
+
+.profesores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profesor-card {
+    perspective: 1000px;
+    height: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 16px;
+    animation: fadeIn 1s ease;
+}
+
+.profesor-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card-front img:hover {
+    transform: scale(1.05);
+}
+
+.card-back {
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    padding: 25px;
+    text-align: center;
+}
+
+.card-back h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #e67e22;
+}
+
+.card-back p {
+    font-size: 16px;
+    color: #dfe6e9;
+    line-height: 1.4;
+}
+
+.card-inner.flipped {
+    transform: rotateY(180deg);
+}
+
+@media (max-width: 600px) {
+    .profesor-card {
+        height: 280px;
+    }
+}
+
+.btn-profesor {
+    margin-top: 20px;
+    padding: 10px 24px;
+    background-color: #00d2ff;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 210, 255, 0.4);
+}
+
+.btn-profesor:hover {
+    background-color: #00a6cc;
+    box-shadow: 0 6px 15px rgba(0, 210, 255, 0.5);
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
