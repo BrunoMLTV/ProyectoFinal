@@ -40,7 +40,7 @@ document.getElementById("recuperarForm").addEventListener("submit", function (e)
 
   alert("¡Contraseña actualizada exitosamente! Ahora puedes iniciar sesión con tu nueva contraseña.");
   
-  window.location.href = "Iniciar seccion.html";
+  window.location.href = "/ProyectoFinal/INICIAR SECCION.html";
 });
 
 
